@@ -3,6 +3,7 @@
 }
 body{
     background-color: rgb(47, 45, 45);
+   
 }
 #space--container--zero{
     display: grid;
@@ -108,7 +109,6 @@ background-color: rgb(114, 78, 58);
 }
 #card--container{
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(5%, 25%));
     justify-content: center;
 }
 #heading{
@@ -171,4 +171,20 @@ from{
 to{
     transition: rotate(1turn);
 }
+}
+
+@media only screen and (max-width: 490px){
+    #card--container{
+       transform: scale(0.80);
+       }
+}
+@media only screen and (max-width: 400px){
+    #card--container{
+       transform: scale(0.60);
+       }
+}
+@media only screen and (max-width: 298px){
+    #card--container{
+       transform: scale(0.40);
+       }
 }
