@@ -173,18 +173,56 @@ to{
 }
 }
 
-@media only screen and (max-width: 490px){
-    #card--container{
+/*
+@media only screen and (max-width: 493px){
+    #card{
        transform: scale(0.80);
        }
 }
 @media only screen and (max-width: 400px){
-    #card--container{
+    #card{
        transform: scale(0.60);
        }
 }
 @media only screen and (max-width: 298px){
-    #card--container{
+    #card{
        transform: scale(0.40);
        }
+}
+*/
+@media only screen and (max-width: 493px){
+    #card--color{
+       transform: scale(90%);
+    }
+
+}
+@media only screen and (max-width: 455px){
+    #card--color{
+       transform: scale(80%);
+    }
+
+}
+@media only screen and (max-width: 400px){
+    #card--color{
+       transform: scale(70%);
+    }
+
+}
+@media only screen and (max-width: 355px){
+    #card--color{
+       transform: scale(60%);
+    }
+
+}
+@media only screen and (max-width: 311px){
+    #card--color{
+       transform: scale(50%);
+    }
+
+}
+@media only screen and (max-width: 251px){
+    #card--color{
+       transform: scale(40%);
+    }
+
 }
