@@ -226,3 +226,21 @@ to{
     }
 
 }
+@media only screen and (max-width: 205px){
+    #card--color{
+       transform: scale(30%);
+    }
+
+}
+@media only screen and (max-width: 151px){
+    #card--color{
+       transform: scale(20%);
+    }
+
+}
+@media only screen and (max-width: 103px){
+    #card--color{
+       transform: scale(10%);
+    }
+
+}
