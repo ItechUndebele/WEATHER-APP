@@ -100,7 +100,7 @@ animation: loading 0.75s ease infinite;
 #card--color{
 background-color: rgb(114, 78, 58);
     width: 30rem;
-    height: 30rem;
+    height: 33rem;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
@@ -177,141 +177,8 @@ to{
 }
 }
 
-@media only screen and (max-width: 493px){
+@media only screen and (max-width: 487px){
     #card--container{
-       /*transform: scale(0.90);*/
-       width: 90%
-       }
-}
-@media only screen and (max-width: 467px){
-    #card--container{
-       /*transform: scale(0.80);*/
-       width: 90%
-       }
-}
-@media only screen and (max-width: 400px){
-    #card--container{
-      /* transform: scale(0.70);*/
-       width: 90%
-       }
-}
-@media only screen and (max-width: 346px){
-    #card--container{
-     /* transform: scale(0.60);*/
-       width: 90%
-       }
-}
-@media only screen and (max-width: 298px){
-    #card--container{
-       /* transform: scale(0.50);*/
-        width: 90%
-       }
-}
-@media only screen and (max-width: 250px){
-    #card--container{
-       /* transform: scale(0.40);*/
-        width: 90%
-       }
-
-}
-@media only screen and (max-width: 198px){
-    #card--container{
-        /*transform: scale(0.30);*/
-        width: 90%
-       }
-}
-@media only screen and (max-width: 150px){
-    #card--color{
-       /* transform: scale(0.20);*/
-        width: 90%
-       }
-}
-@media only screen and (max-width: 106px){
-    #card--container{
-       /* transform: scale(0.10);*/
-        margin: 100%;
-       }
-}
-@media only screen and (max-width: 397px){
-    #card--container{
-       /* transform: scale(0.40);*/
-           width: 30rem;
-       }
-
-}
-
-/*
-@media only screen and (max-width: 493px){
-    #card--container{
-        width: 90%;
-        height: 90%;
+   
     }
-
 }
-
-@media only screen and (max-width: 455px){
-    #card--container{
-       transform: scale(80%);
-      width: 80%;
-      height: 80%;
-    }
-
-}
-@media only screen and (max-width: 400px){
-    #card--container{
-       transform: scale(70%);
-      width: 70%;
-      height: 70%;
-    }
-
-}
-@media only screen and (max-width: 355px){
-    #card--containerr{
-     transform: scale(60%);
-       width: 60%;
-       height: 60%;
-    }
-
-}
-@media only screen and (max-width: 311px){
-    #card--container{
-     transform: scale(50%);
-      width: 50%;
-      height: 50%;
-    
-    }
-
-}
-@media only screen and (max-width: 251px){
-    #card--container{
-      transform: scale(40%);
-      width: 40%;
-      height: 40%;
-    }
-
-}
-@media only screen and (max-width: 205px){
-    #card--container{
-      transform: scale(30%);
-      width: 30%;
-      height: 30%;
-    }
-
-}
-@media only screen and (max-width: 151px){
-    #card--container{
-       transform: scale(20%);
-      width: 20%;
-      height: 20%;
-    }
-
-}
-@media only screen and (max-width: 103px){
-    #card--container{
-     transform: scale(10%);
-      width: 10%;
-      height: 10%;
-    }
-
-}
-*/
