@@ -57,45 +57,45 @@ body{
 }
 /**/
 #movie--finder{
- position:absolute;
- left: 1rem;
- font-family: 'Roboto' sans-serif;
- font-size: 3rem;
+    position:absolute;
+    left: 1rem;
+    font-family: 'Roboto' sans-serif;
+    font-size: 3rem;
 }
 #search--api{
-cursor: pointer;
+    cursor: pointer;
 }
 #see--button{
-position: fixed;
-top: 30rem;
-left: 30rem;
-z-index: 10000;
-font-size: 100rem;
+    position: fixed;
+    top: 30rem;
+    left: 30rem;
+    z-index: 10000;
+    font-size: 100rem;
 }
 .loader{
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-transition: opacity 0.75s, visibility 0.75s;
+    transition: opacity 0.75s, visibility 0.75s;
 }
 .loader-hiden{
-opacity: 0;
-visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 .loader::after{
-content: '';
-width: 75px;
-height: 75px;
-border: 15px solid chocolate;
-border-top-color: crimson;
-border-radius: 50%;
-animation: loading 0.75s ease infinite;
+    content: '';
+    width: 75px;
+    height: 75px;
+    border: 15px solid chocolate;
+    border-top-color: crimson;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
 }
 #card--color{
 background-color: rgb(114, 78, 58);
@@ -135,15 +135,17 @@ background-color: rgb(114, 78, 58);
 #text--field{
     position: relative;
     bottom: 8rem;
+    width: 25rem;
     height: 2.5rem;
     border-radius: 0.3rem;
     border-style: none;
-    display: flex;
-    justify-content: center;
+   
     
 }
 #search--icon{
   display: grid;
+  justify-content: center;
+  
 
 }
 #search--icon a{
@@ -178,7 +180,19 @@ to{
 }
 
 @media only screen and (max-width: 487px){
-    #card--container{
+    #text--field{
+        width: 20rem;
+    }
    
+    #current, #heading, #current--space, #location--space{
+        position: relative;
+        left: 3rem;
+    }
+    footer{
+       transform: scale(0.80);
+    }
+    #card--color{
+        width: 25rem;
+        height: 33rem;
     }
 }
