@@ -9,7 +9,7 @@ const axception = document.querySelector('#axception');
 
 const key =  'd32ee26b35b94da69dc160151232508';
 let search ='Siyabuswa';
-//let days = '1';
+
 
 async function myZero(){
 
@@ -38,21 +38,12 @@ async function myZero(){
       <div id="location--text">${'Tz_id: '+jsonDataSecond0.tz_id}</div>
 `
    } catch(TypeError){
-      axception.innerHTML = `<div id='axception--error'>0 results found,<br/>  ${textField.value} did not match anything in our database</div>`
-      
+      axception.innerHTML = `<div id='axception--error'>0 results found,<br/>  ${textField.value} did not match anything in our database</div>`     
  }
       
 }
 
 myZero();
-
-/*
-textField.addEventListener('input', (e)=>{
-    search = e.target.value.toLowerCase().trim();
-    console.log(search);
-     myZero();
-})
-*/
 
 button.addEventListener('click', ()=>{
       search = textField.value;
