@@ -72,31 +72,7 @@ body{
     z-index: 10000;
     font-size: 100rem;
 }
-.loader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    transition: opacity 0.75s, visibility 0.75s;
-}
-.loader-hiden{
-    opacity: 0;
-    visibility: hidden;
-}
-.loader::after{
-    content: '';
-    width: 75px;
-    height: 75px;
-    border: 15px solid chocolate;
-    border-top-color: crimson;
-    border-radius: 50%;
-    animation: loading 0.75s ease infinite;
-}
 #card--color{
 background-color: rgb(114, 78, 58);
     width: 30rem;
@@ -170,14 +146,7 @@ footer{
     position: relative;
     top: 1rem
 }
-@keyframes loading{
-from{
-    transition: rotate(0turn);
-}
-to{
-    transition: rotate(1turn);
-}
-}
+
 
 @media only screen and (max-width: 487px){
     #text--field{
