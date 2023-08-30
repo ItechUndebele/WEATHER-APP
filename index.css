@@ -3,7 +3,7 @@
 }
 body{
     background-color: rgb(47, 45, 45);
-   
+  
 }
 #space--container--zero{
     display: grid;
@@ -229,10 +229,16 @@ to{
 @media only screen and (max-width: 106px){
     #card--container{
        /* transform: scale(0.10);*/
-        width: 90%
+        margin: 100%;
        }
 }
+@media only screen and (max-width: 397px){
+    #card--container{
+       /* transform: scale(0.40);*/
+           width: 30rem;
+       }
 
+}
 
 /*
 @media only screen and (max-width: 493px){
