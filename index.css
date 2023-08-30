@@ -180,22 +180,6 @@ to{
 }
 
 @media only screen and (max-width: 487px){
-  /*  #text--field{
-        width: 20rem;
-    }
-   
-    #current, #heading, #current--space, #location--space{
-        position: relative;
-        left: 3rem;
-    }
-    footer{
-       transform: scale(0.80);
-    }
-    #card--color{
-        width: 25rem;
-        height: 33rem;
-    }
-    */
     #text--field{
         width: 13rem;
     }
@@ -204,5 +188,22 @@ to{
     }
     #card--color{
         width: 15rem;
+    }
+    #current, #heading, #current--space, #location--space{
+        position: relative;
+        left: 1rem;
+        bottom: 5rem;
+    }
+    footer{
+       text-align: center;
+       position: relative; 
+    }
+    #axception{
+        position: relative;
+        left: 1rem;
+        bottom: 5rem;
+    }
+    #axception--error{
+        width: 13rem;
     }
 }
