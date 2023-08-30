@@ -180,7 +180,7 @@ to{
 }
 
 @media only screen and (max-width: 487px){
-    #text--field{
+  /*  #text--field{
         width: 20rem;
     }
    
@@ -194,5 +194,15 @@ to{
     #card--color{
         width: 25rem;
         height: 33rem;
+    }
+    */
+    #text--field{
+        width: 13rem;
+    }
+    #card{
+        width: 15rem;
+    }
+    #card--color{
+        width: 15rem;
     }
 }
