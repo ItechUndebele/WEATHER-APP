@@ -7,7 +7,7 @@ const searchIcon = document.querySelector('#search--icon');
 const button = document.querySelector('#button');
 const axception = document.querySelector('#axception');
 
-let search ='london';
+let search ='Moteti';
 const key =  '7466afa010mshe81b5d8d5a68023p1d0c5djsn100f837b673b';
 
 
