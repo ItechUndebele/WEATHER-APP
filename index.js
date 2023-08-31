@@ -7,18 +7,30 @@ const searchIcon = document.querySelector('#search--icon');
 const button = document.querySelector('#button');
 const axception = document.querySelector('#axception');
 
-const key =  'd32ee26b35b94da69dc160151232508';
-let search ='Siyabuswa';
-//let days = '1';
+let search ='london';
+const key =  '7466afa010mshe81b5d8d5a68023p1d0c5djsn100f837b673b';
+
+
+
 
 async function myZero(){
 
+   const url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${search}`;
+   const options = {
+      method: 'GET',
+      headers: {
+         'X-RapidAPI-Key': `${key}`,
+         'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+      }
+   };
+
    try{
-      const api = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${search}`);
+      const api = await fetch(url, options);
       const jsonData = await api.json();
       const jsonDataSecond = jsonData.current;
       const jsonDataSecond0 = jsonData.location;
-     // console.log(jsonDataSecond);
+      console.log(jsonData);
+   
       
     currentSpace.innerHTML = `
       <div id="current--text">${'Temperature_c: '+ jsonDataSecond.temp_c}</div>
@@ -38,21 +50,12 @@ async function myZero(){
       <div id="location--text">${'Tz_id: '+jsonDataSecond0.tz_id}</div>
 `
    } catch(TypeError){
-      axception.innerHTML = `<div id='axception--error'>0 results found,<br/>  ${textField.value} did not match anything in our database</div>`
-      
+      axception.innerHTML = `<div id='axception--error'>0 results found,<br/>  ${textField.value} did not match anything in our database</div>`     
  }
       
 }
 
 myZero();
-
-/*
-textField.addEventListener('input', (e)=>{
-    search = e.target.value.toLowerCase().trim();
-    console.log(search);
-     myZero();
-})
-*/
 
 button.addEventListener('click', ()=>{
       search = textField.value;

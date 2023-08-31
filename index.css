@@ -3,7 +3,7 @@
 }
 body{
     background-color: rgb(47, 45, 45);
-   
+  
 }
 #space--container--zero{
     display: grid;
@@ -57,50 +57,26 @@ body{
 }
 /**/
 #movie--finder{
- position:absolute;
- left: 1rem;
- font-family: 'Roboto' sans-serif;
- font-size: 3rem;
+    position:absolute;
+    left: 1rem;
+    font-family: 'Roboto' sans-serif;
+    font-size: 3rem;
 }
 #search--api{
-cursor: pointer;
+    cursor: pointer;
 }
 #see--button{
-position: fixed;
-top: 30rem;
-left: 30rem;
-z-index: 10000;
-font-size: 100rem;
+    position: fixed;
+    top: 30rem;
+    left: 30rem;
+    z-index: 10000;
+    font-size: 100rem;
 }
-.loader{
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
 
-transition: opacity 0.75s, visibility 0.75s;
-}
-.loader-hiden{
-opacity: 0;
-visibility: hidden;
-}
-.loader::after{
-content: '';
-width: 75px;
-height: 75px;
-border: 15px solid chocolate;
-border-top-color: crimson;
-border-radius: 50%;
-animation: loading 0.75s ease infinite;
-}
 #card--color{
 background-color: rgb(114, 78, 58);
     width: 30rem;
-    height: 30rem;
+    height: 33rem;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
@@ -135,15 +111,21 @@ background-color: rgb(114, 78, 58);
 #text--field{
     position: relative;
     bottom: 8rem;
+    width: 25rem;
     height: 2.5rem;
     border-radius: 0.3rem;
     border-style: none;
-    display: flex;
-    justify-content: center;
+   
+    
 }
 #search--icon{
   display: grid;
+  justify-content: center;
+  
 
+}
+#search--icon a{
+    text-decoration: none;
 }
 #search--icon button{
     position: relative;
@@ -164,134 +146,33 @@ footer{
     position: relative;
     top: 1rem
 }
-@keyframes loading{
-from{
-    transition: rotate(0turn);
-}
-to{
-    transition: rotate(1turn);
-}
-}
 
-@media only screen and (max-width: 493px){
-    #card--container{
-       transform: scale(0.90);
-       }
-}
-@media only screen and (max-width: 467px){
-    #card--container{
-       transform: scale(0.80);
-       }
-}
-@media only screen and (max-width: 400px){
-    #card--container{
-       transform: scale(0.70);
-       }
-}
-@media only screen and (max-width: 346px){
-    #card--container{
-       transform: scale(0.60);
-       }
-}
-@media only screen and (max-width: 298px){
-    #card--container{
-        transform: scale(0.50);
-       }
-}
-@media only screen and (max-width: 250px){
-    #card--container{
-        transform: scale(0.40);
-       }
-}
-@media only screen and (max-width: 198px){
-    #card--container{
-        transform: scale(0.30);
-       }
-}
-@media only screen and (max-width: 150px){
+
+@media only screen and (max-width: 487px){
+    #text--field{
+        width: 13rem;
+    }
+    #card{
+        width: 15rem;
+    }
     #card--color{
-        transform: scale(0.20);
-       }
-}
-@media only screen and (max-width: 106px){
-    #card--container{
-        transform: scale(0.10);
-       }
-}
-
-
-/*
-@media only screen and (max-width: 493px){
-    #card--container{
-        width: 90%;
-        height: 90%;
+        width: 15rem;
     }
-
-}
-
-@media only screen and (max-width: 455px){
-    #card--container{
-       transform: scale(80%);
-      width: 80%;
-      height: 80%;
+    #current, #heading, #current--space, #location--space{
+        position: relative;
+        left: 1rem;
+        bottom: 5rem;
     }
-
-}
-@media only screen and (max-width: 400px){
-    #card--container{
-       transform: scale(70%);
-      width: 70%;
-      height: 70%;
+    footer{
+       text-align: center;
+       position: relative; 
     }
-
-}
-@media only screen and (max-width: 355px){
-    #card--containerr{
-     transform: scale(60%);
-       width: 60%;
-       height: 60%;
+    #axception{
+        position: relative;
+        left: 1rem;
+        bottom: 5rem;
     }
-
-}
-@media only screen and (max-width: 311px){
-    #card--container{
-     transform: scale(50%);
-      width: 50%;
-      height: 50%;
-    
+    #axception--error{
+        width: 13rem;
     }
-
 }
-@media only screen and (max-width: 251px){
-    #card--container{
-      transform: scale(40%);
-      width: 40%;
-      height: 40%;
-    }
-
-}
-@media only screen and (max-width: 205px){
-    #card--container{
-      transform: scale(30%);
-      width: 30%;
-      height: 30%;
-    }
-
-}
-@media only screen and (max-width: 151px){
-    #card--container{
-       transform: scale(20%);
-      width: 20%;
-      height: 20%;
-    }
-
-}
-@media only screen and (max-width: 103px){
-    #card--container{
-     transform: scale(10%);
-      width: 10%;
-      height: 10%;
-    }
-
-}
-*/
