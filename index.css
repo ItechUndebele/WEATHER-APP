@@ -74,7 +74,7 @@ body{
 }
 
 #card--color{
-background-color: rgb(114, 78, 58);
+background-color: rgb(62, 72, 107);
     width: 30rem;
     height: 33rem;
     border-radius: 1rem;
@@ -146,7 +146,25 @@ footer{
     position: relative;
     top: 1rem
 }
-
+#fa-cloud-sun{
+    width: 40rem;
+    height: 20rem;
+    position: fixed;
+    opacity: 0.2;
+}
+#big--icon{
+    position: relative;
+    bottom: 15rem;
+    left: 4rem;
+}
+body{
+    background-image: url('images/pexels-pixabay-531756.jpg');
+    background-repeat: no-repeat;
+   
+}
+#humi{
+    width: 1.5rem;
+}
 
 @media only screen and (max-width: 487px){
     #text--field{

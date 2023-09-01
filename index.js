@@ -33,14 +33,17 @@ async function myZero(){
    
       
     currentSpace.innerHTML = `
-      <div id="current--text">${'Temperature_c: '+ jsonDataSecond.temp_c}</div>
-      <div id="current--text">${'Temperature_f: '+ jsonDataSecond.temp_f}</div>
-      <div id="current--text">${'Wind_mph: '+ jsonDataSecond.wind_mph}</div>
-      <div id="current--text">${'Wind_kph: '+ jsonDataSecond.wind_kph}</div>
-      <div id="current--text">${'Humidity: '+ jsonDataSecond.humidity}</div>    
-     `
+   <div id='current--container'>
+      <div id="current--text"><i class="fa-solid fa-temperature-three-quarters"></i> ${'Temperature_c: '+ jsonDataSecond.temp_c}</div>
+      <div id="current--text"><i class="fa-solid fa-temperature-three-quarters"></i> ${'Temperature_f: '+ jsonDataSecond.temp_f}</div>
+      <div id="current--text"><i class="fa-solid fa-wind"></i> ${'Wind_mph: '+ jsonDataSecond.wind_mph}</div>
+      <div id="current--text"><i class="fa-solid fa-wind"></i> ${'Wind_kph: '+ jsonDataSecond.wind_kph}</div>
+      <div id="current--text"><img src="images/humidity-svgrepo-com.svg" id='humi'> ${'Humidity: '+ jsonDataSecond.humidity}</div>   
+      <div id='big--icon'>
+    </div>
+      `
      locationSpace.innerHTML = `
-      
+   <div id='location--container'>
       <div id="location--text">${'Country: '+jsonDataSecond0.country}</div>
       <div id="location--text">${'Lat: '+jsonDataSecond0.lat}</div>
       <div id="location--text">${'Localtime_epoch: '+jsonDataSecond0.localtime_epoch}</div>
@@ -48,7 +51,8 @@ async function myZero(){
       <div id="location--text">${'Name: '+jsonDataSecond0.name}</div>
       <div id="location--text">${'Region: '+jsonDataSecond0.region}</div>
       <div id="location--text">${'Tz_id: '+jsonDataSecond0.tz_id}</div>
-`
+   </div>
+      `
    } catch(TypeError){
       axception.innerHTML = `<div id='axception--error'>0 results found,<br/>  ${textField.value} did not match anything in our database</div>`     
  }
