@@ -76,13 +76,13 @@ footer{
 @media only screen and (min-width: 350px){
     .phones{
         width: 700px;
-        height: 1000px;
+        height: 500px;
     }
 }
 @media only screen and (min-width: 700px){
     .phones{
         width: 1920px;
-        height: 1080px;
+        height: 600px;
     }
     .whole--content{
         display: flex;
