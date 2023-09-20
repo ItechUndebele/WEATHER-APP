@@ -2,7 +2,8 @@
 .phones{
     width: 350px;
     height: 650px;
-    background-color: rgb(111, 109, 105);
+    background-color: rgb(76, 88, 103);
+    border-radius: 0.5rem;
    
 }
 
